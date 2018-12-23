@@ -1,0 +1,92 @@
+﻿/*
+ * 4.20 ARTICLES
+ * ============================================================================
+ */
+
+.section-articles{
+	
+}
+.articles-item{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #e2ebee;
+}
+.articles-item:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.articles-image{
+	display: block;
+	margin-bottom: 15px;
+}
+.articles-header{
+	margin-bottom: 15px;
+}
+.articles-header h3{
+	font-size: 1.25rem;
+}
+.articles-header a{
+	text-decoration: none;
+}
+
+.articles-desc ol li{
+	margin-bottom: 8px;
+}
+
+
+.section-articles .pagination{
+	text-align: left;
+	line-height: 32px;
+	font-weight: 700;
+}
+.section-articles .pagination span,
+.section-articles .pagination a{
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	margin: 0 0 7px 5px;
+	border: 1px solid #e6eaeb;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 600;
+	color: #2476bc;
+}
+.section-articles .pagination span,
+.section-articles .pagination a:hover{
+	background-color: #d0ebd3;
+}
+.section-articles .pagination a{
+	background-color: #f2f6f7;
+}
+
+
+
+@media (min-width: 576px){
+	.articles-image{
+		width: 150px;
+		float: left;
+	}
+	.articles-header{
+		width: calc(100% - 180px);
+		float: right;
+		padding-top: 15px;
+	}
+	.articles-desc{
+		width: 100%;
+		float: left;
+	}
+}
+@media (min-width: 768px){
+	
+}
+@media (min-width: 992px){
+	
+}
+@media (min-width: 1200px){
+	
+}
+@media (min-width: 1400px){
+	
+}

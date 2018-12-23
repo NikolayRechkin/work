@@ -1,0 +1,55 @@
+﻿/*
+ * 4.13 LOGIN
+ * ============================================================================
+ */
+
+.section-login{
+	padding: 20px 10px 15px 10px;
+	border-bottom: 3px solid #ddd;
+	background-color: #ededed;
+}
+.login-form-inner{
+	width: 100%;
+	
+}
+.section-login .form-control{
+	height: 42px;
+	margin-bottom: 5px;
+	box-shadow: 0 2px 1px 0 rgba(41, 42, 42, 0.29);
+	border: none;
+	border-radius: 0;
+	background-color: #fff;
+}
+.section-login .form-control-icon{
+	padding-left: 38px;
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+}
+.section-login .form-group a{
+	font-weight: 600;
+}
+
+
+@media (min-width: 576px){
+	
+	.section-login{
+		padding: 30px;
+	}
+	.login-form-inner{
+		max-width: 410px;
+		padding-left: 180px;
+		background: url(/themes/default/image/login-icon.png) no-repeat 0 0;
+	}
+}
+@media (min-width: 768px){
+	
+}
+@media (min-width: 992px){
+	
+}
+@media (min-width: 1200px){
+	
+}
+@media (min-width: 1400px){
+	
+}

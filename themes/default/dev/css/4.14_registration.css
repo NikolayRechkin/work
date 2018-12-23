@@ -1,0 +1,112 @@
+﻿/*
+ * 4.14 REGISTRATION
+ * ============================================================================
+ */
+
+.section-registration{
+	
+}
+.section-registration .form-radio-group{
+	margin-right: 16px;
+}
+.section-registration table{
+	width: 100%;
+}
+.section-registration th, .section-registration td{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.section-registration th{
+	width: 150px;
+	vertical-align: middle;
+	text-align: left;
+}
+.tab-header{
+	margin-bottom: 10px;
+}
+
+.section-registration table h3{
+	margin: 8px 0;
+	padding: 5px 0;
+	border-top: 3px solid #eaf0f2;
+	border-bottom: 3px solid #eaf0f2;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 15px;
+	color: #2476bc;
+}
+.section-registration sup{
+	color: #ff4952;
+}
+
+.section-registration .form-buttons{
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.section-registration .form-buttons:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.section-registration .form-buttons .btn{
+	width: calc(50% - 20px);
+	max-width: 300px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.section-registration .form-buttons.single .btn{
+	width: calc(100% - 20px);
+}
+
+
+@media (max-width: 576px){
+	
+	.section-registration table, .section-registration table tbody, .section-registration table tr, .section-registration table th, .section-registration table td{
+		width: 100%;
+		display: block;
+	}
+	.section-registration table td.empty, .section-registration table th.empty{
+		display: none;
+	}
+	
+}
+@media (max-width: 767px){
+	.section-registration table table, .section-registration table table tbody, .section-registration table table tr, .section-registration table table td{
+		display: block;
+	}
+}
+
+
+@media (min-width: 576px){
+	.section-registration table table{
+		margin-left: -15px;
+	}
+	.section-registration td{
+		padding-left: 15px;
+	}
+	.section-registration td[colspan]{
+		padding-left: 0;
+	}
+}
+@media (min-width: 768px){
+	
+}
+@media (min-width: 992px){
+	.section-registration th{
+		width: 200px;
+	}
+	.section-registration table h3{
+		padding: 8px 0;
+		font-size: 18px;
+	}
+	.section-registration .form-buttons .btn{
+		min-width: 150px;
+	}
+}
+@media (min-width: 1200px){
+	
+}
+@media (min-width: 1400px){
+	
+}

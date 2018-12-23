@@ -1,0 +1,69 @@
+﻿/*
+ * 4.0 SECTIONS
+ * ============================================================================
+ */
+
+.section{
+	position: relative;
+}
+
+.section-main{
+	width: 100%;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: stretch;
+    -webkit-box-align: stretch;
+            align-items: stretch;
+}
+.section-main > .container{
+	width: 100%;
+	display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: stretch;
+      -webkit-box-align: stretch;
+            align-items: stretch;
+	padding: 0;
+}
+.ie-9 .section-main > .container{
+	display: table;
+	table-layout: fixed;
+}
+.section-content{
+	overflow: hidden;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	/*padding: 15px 15px 10px 15px;*/
+	padding: 15px 10px 10px 10px;
+	background-color: #fff;
+}
+.ie-9 .section-content{
+	display: table-cell;
+	vertical-align: top;
+}
+.section-content .section{
+	/*margin-bottom: 30px;*/
+	margin-bottom: 10px;
+}
+
+
+@media (min-width: 576px){
+	
+}
+@media (min-width: 768px){
+	
+}
+@media (min-width: 992px){
+	
+}
+@media (min-width: 1200px){
+	
+}
+@media (min-width: 1400px){
+	
+}

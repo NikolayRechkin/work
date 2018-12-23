@@ -1,0 +1,309 @@
+﻿/*
+ * 4.15 ACCOUNT
+ * ============================================================================
+ */
+
+.section-account{
+	
+}
+
+
+/* Menu */
+
+.section-account .account-menu{
+	margin-bottom: 20px;
+}
+
+.section-account .account-menu-header{
+	max-width: 300px;
+	position: relative;
+	margin: 0 auto 8px auto;
+	padding: 15px 0 15px 60px;
+	border: 1px solid #e0e6e8;
+	border-radius: 4px;
+	background-color: #f2f6f7;
+}
+.section-account .account-menu-header:before{
+	content: '';
+	width: 33px;
+	height: 33px;
+	display: block;
+	position: absolute;
+	top: calc(50% - 16px);
+	left: 15px;
+	background: url(/themes/default/image/sprite.png) no-repeat -158px -44px;
+}
+.section-account .account-menu-header h5{
+	margin-bottom: 2px;
+}
+.section-account .account-nav-login{
+	overflow: hidden;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.account-menu-nav{
+	max-width: 300px;
+	margin: 0 auto 8px auto;
+	margin-bottom: 8px;
+	border: 1px solid #e0e6e8;
+	border-radius: 4px;
+	background-color: #f2f6f7;
+	font-weight: 600;
+}
+.account-menu-nav ul{
+	width: 100%;
+	height: 63px;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+.account-menu-nav li{
+	width: 16.666%;
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+}
+.account-menu-nav li a{
+	display: block;
+	position: relative;
+	padding: 0;
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.account-menu-nav li a:before, .account-menu-nav li a:after{
+	content: '';
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	background-image: url(/themes/default/image/sprite.png);
+	background-repeat: no-repeat;
+}
+.account-menu-nav li a:before{
+	background-position-y: -42px;
+}
+.account-menu-nav li a:after{
+	display: none;
+	background-position-y: -68px;
+}
+.account-menu-nav li a:hover:before, .account-menu-nav li a.active:before{
+	display: none;
+}
+.account-menu-nav li a:hover:after, .account-menu-nav li a.active:after{
+	display: inline-block;
+}
+
+.account-menu-nav li .account-menu-data:before, .account-menu-nav li .account-menu-data:after{
+	background-position-x: -2px;
+}
+.account-menu-nav li .account-menu-edit-data:before, .account-menu-nav li .account-menu-edit-data:after{
+	background-position-x: -28px;
+}
+.account-menu-nav li .account-menu-edit-pass:before, .account-menu-nav li .account-menu-edit-pass:after{
+	background-position-x: -54px;
+}
+.account-menu-nav li .account-menu-history:before, .account-menu-nav li .account-menu-history:after{
+	background-position-x: -80px;
+}
+.account-menu-nav li .account-menu-msg:before, .account-menu-nav li .account-menu-msg:after{
+	background-position-x: -106px;
+}
+.account-menu-nav li .account-menu-logout:before, .account-menu-nav li .account-menu-logout:after{
+	background-position-x: -132px;
+}
+
+
+.account-menu-nav li a span{
+	display: none;
+	text-decoration: underline;
+}
+
+
+
+/* Account table */
+
+.section-account-table table{
+	width: 100%;
+	border-top: 1px solid #d2d2d2;
+	border-right: 1px solid #d2d2d2;
+}
+.section-account-table th, .section-account-table td{
+	padding: 15px;
+	border-bottom: 1px solid #d2d2d2;
+	border-left: 1px solid #d2d2d2;
+	text-align: left;
+}
+.section-account-table th{
+	width: 170px;
+}
+
+
+@media (max-width: 575px){
+	.section-account-table table, .section-account-table tbody, .section-account-table tr{
+		display: block;
+	}
+	.section-account-table table{
+		border-left: 1px solid #d2d2d2;
+	}
+	.section-account-table tr{
+		padding: 15px;
+		border-bottom: 1px solid #d2d2d2;
+	}
+	.section-account-table th, .section-account-table td{
+		width: auto;
+		display: inline-block;
+		padding: 0;
+		border: none;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.section-account-table th{
+		margin-right: 10px;
+	}
+}
+
+
+
+@media (min-width: 576px){
+	.section-account .account-menu:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.section-account .account-menu-header{
+		width: calc(50% - 10px);
+		max-width: none;
+		height: 65px;
+		float: left;
+	}
+	.account-menu-nav{
+		width: calc(50% - 10px);
+		max-width: none;
+		float: right;
+	}
+	.account-menu-nav ul{
+		height: 63px;
+	}
+}
+@media (min-width: 768px){
+	.section-account .account-menu{
+		width: 240px;
+		height: auto;
+		float: left;
+		border-radius: 5px;
+		background-color: #f2f6f7;
+	}
+	.section-account .account-menu-header{
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-bottom: 0;
+		padding-left: 75px;
+		border: none;
+		border-bottom: 2px solid #e3ecee;
+		border-radius: 0;
+		background: none;
+	}
+	.section-account .account-menu-header:before{
+		left: 32px;
+	}
+	
+	.account-menu-nav{
+		width: 100%;
+		float: none;
+		margin-bottom: 0;
+		padding: 15px;
+		border: none;
+		border-radius: 0;
+		background: none;
+	}
+	.account-menu-nav ul{
+		height: auto;
+		display: block;
+	}
+	.account-menu-nav li{
+		width: 100%;
+		display: block;
+		position: relative;
+		margin: 0 0 4px 0;
+		padding: 0 0 0 24px;
+		text-align: left;
+	}
+	.account-menu-nav li:before{
+		content: '';
+		width: 6px;
+		height: 6px;
+		display: block;
+		position: absolute;
+		top: calc(50% - 3px);
+		left: 0;
+		border-radius: 10px;
+		background-color: #49494a;
+	}
+	.account-menu-nav li a{
+		padding: 0 0 0 35px;
+		line-height: 22px;
+	}
+	.account-menu-nav li a:before, .account-menu-nav li a:after{
+		display: block!important;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-transition: opacity 0.25s ease-in-out;
+		-ms-transition: opacity 0.25s ease-in-out;
+		transition: opacity 0.25s ease-in-out;
+	}
+	.account-menu-nav li a:before{
+		z-index: 1;
+	}
+	.account-menu-nav li a:after{
+		opacity: 0;
+		z-index: 2;
+	}
+	.account-menu-nav li a:hover:before, .account-menu-nav li a.active:before{
+		opacity: 0;
+	}
+	.account-menu-nav li a:hover:after, .account-menu-nav li a.active:after{
+		opacity: 1;
+	}
+	
+	.account-menu-nav li a span{
+		display: inline;
+	}
+	
+	.account-content{
+		width: calc(100% - 265px);
+		float: right;
+	}
+	
+	
+}
+@media (min-width: 992px){
+	
+	/* acount table */
+	.section-account-table th{
+		width: 250px;
+	}
+}
+@media (min-width: 1200px){
+	
+}
+@media (min-width: 1920px){
+	.section-account .account-menu{
+		width: 300px;
+	}
+	.account-menu-nav li a{
+		line-height: 26px;
+	}
+	.account-menu-nav li a:before, .account-menu-nav li a:after{
+		top: 2px;
+	}
+	.account-content{
+		width: calc(100% - 330px);
+	}
+}
